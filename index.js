@@ -44,8 +44,9 @@ Definition.find({}, (err, docs) => {
   docs.forEach(d => {
     d.index((err, res) => {
       if (err) console.log(err);
-      else console.log(res);
+      //console.log(res);
     });
+    ++i;
   });
   console.log(i);
 }).then(console.log("finished"));
