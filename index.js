@@ -48,7 +48,7 @@ Definition.find({}, (err, docs) => {
     });
     ++i;
   });
-  console.log(i);
+  console.log("Records synced:", i);
 }).then(console.log("finished"));
 
 /*
